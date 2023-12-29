@@ -8,6 +8,8 @@ import { Nav, Navbar } from 'react-bootstrap';
 import Home from './Home';
 import About from './About';
 import Blog from './Blog';
+import ContactUs from './ContactUs';
+import Login from './Login';
 
 const App = () => (
     <Router>
@@ -21,6 +23,8 @@ const App = () => (
                             <Link to="/" className="nav-link">Home</Link>
                             <Link to="/about" className="nav-link">About</Link>
                             <Link to="/blog" className="nav-link">Blog</Link>
+                            <Link to="/contact" className="nav-link">Contact us</Link>
+                            <Login/>
                         </Nav>
                     </Navbar.Collapse>
                 </div>
@@ -30,6 +34,7 @@ const App = () => (
                 <Route path="/" element={<Home/>}/>
                 <Route path="/about" element={<About/>}/>
                 <Route path="/blog" element={<Blog/>}/>
+                <Route path="/contact" element={<ContactUs/>}/>
             </Routes>
         </div>
     </Router>
