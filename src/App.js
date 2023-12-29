@@ -7,6 +7,7 @@ import { Nav, Navbar } from 'react-bootstrap';
 
 import Home from './Home';
 import About from './About';
+import Blog from './Blog';
 
 const App = () => (
     <Router>
@@ -19,6 +20,7 @@ const App = () => (
                         <Nav className="mr-auto">
                             <Link to="/" className="nav-link">Home</Link>
                             <Link to="/about" className="nav-link">About</Link>
+                            <Link to="/blog" className="nav-link">Blog</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </div>
@@ -27,6 +29,7 @@ const App = () => (
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/about" element={<About/>}/>
+                <Route path="/blog" element={<Blog/>}/>
             </Routes>
         </div>
     </Router>
